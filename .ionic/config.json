@@ -1,0 +1,10 @@
+{
+  "version": "4.12.0",
+  "telemetry": true,
+  "npmClient": "npm",
+  "tokens.telemetry": "d511bac0-2302-42b8-a34a-84aaaf4da603",
+  "git.setup": false,
+  "user.id": 1953068,
+  "user.email": "d.swan0204@gmail.com",
+  "tokens.user": "4e26a1a6128f110215951f429752cb7e"
+}
