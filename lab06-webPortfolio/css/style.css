@@ -132,6 +132,23 @@ nav .navbar {
 	text-transform: uppercase;
 	letter-spacing: 10px;
 }
+
+.profile-heading ul {
+	list-style: none;
+	padding: 0;
+	transform: scale(1, 1.1);
+}
+
+.profile-heading li {
+	font-size: 1.5em;
+	font-style: italic;
+	margin-top: 10px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #768b8d;
+
+}
+
 .section-line {
 	width: 30%;
 	border-top: 10px solid rgba(137, 137, 137, 0.47);
