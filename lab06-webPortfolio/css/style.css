@@ -26,6 +26,14 @@ p, a, li {
 
 
 /* navigation styles */
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+
 nav .navbar {
 	text-decoration: none;
 	color: white;
@@ -44,6 +52,10 @@ nav .navbar {
 .nav-item2 a {
 	color: white;
 	font-weight: 300;
+}
+
+.nav-link:hover {
+	background-color: #b9b9b9;
 }
 
 @media screen and (min-width: 600px) {
@@ -136,12 +148,17 @@ nav .navbar {
 /* ============================					============================ */
 .profile-content {
 	width: 100%;
-	margin: 0 auto;
+	margin: 10px auto;
 	box-shadow: 0px 0px 7px 3px #0000004d;
 }
 .profile-section-content h2 {
 	text-transform: uppercase;
 	letter-spacing: 10px;
+}
+@media screen and (min-width: 900px) {
+	.profile-content h3 {
+		font-size: 28px;
+	}
 }
 
 .profile-heading ul {
@@ -161,10 +178,10 @@ nav .navbar {
 
 @media screen and (min-width:1000px){
 	.profile-heading li {
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.profile-card-name {
-		font-size: 48px;
+		font-size: 28px;
 	}
 }
 
@@ -180,17 +197,31 @@ nav .navbar {
 	margin: 8px;
 }
 
+@media screen and (min-width: 900px) {
+	.max-container {
+		max-width: 1200px;
+		margin: 0 auto
+	}
+}
+
 .image-block img {
 	width: 100%;
 }
 
 .list-group-item {
 	letter-spacing: 8px;
+	font-size: 14px;
+}
+
+@media screen and (min-wdith: 900px){
+	.list-group  li {
+		font-size: 16px;
+	}
 }
 
 .progress {
-	font-size: 1rem;
-	height: 2rem;
+	font-size: 0.6em;
+	height: 2em;
 	font-weight: bold;
 }
 
@@ -211,5 +242,43 @@ nav .navbar {
 	.card-img-top {
 		width: 100%;
 	}
+
+}
+
+.job-position {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.progress-bar {
+	background-color: #2c424d;
+}
+
+/* ============================ projects section ============================ */
+/* ============================					============================ */
+.project-section {
+	margin-top: 40px;
+	max-width: 1200px;
+	margin: 40px auto 0 auto;
+}
+
+.project-image img {
+	width: 100%;
+}
+
+.content-title {
+	font-size: 1.5em;
+	font-style: italic;
+	margin-top: 10px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: #768b8d;
+}
+
+
+@media screen and (min-width: 600px){
+
+}
+@media screen and (min-width: 1000px){
 
 }
