@@ -15,8 +15,14 @@ class Crud extends CI_Controller {
 	}
 
 
-	public function write()
-	{
+	public function write(){
+
+		if (!$this->tank_auth->is_logged_in()) {
+			redirect('/auth/login/');
+		} else {
+			$data['auth_id']	= $this->tank_auth->get_user_id();
+		}
+
 
 		// validation library: not autoloaded, so we must load this here or in a construct.
 		$this->load->library('form_validation');
@@ -97,6 +103,13 @@ class Crud extends CI_Controller {
 			redirect('/', 'location');
 		}
 
+		// login security
+		if (!$this->tank_auth->is_logged_in()) {
+			redirect('/auth/login/');
+		} else {
+			$data['auth_id']	= $this->tank_auth->get_user_id();
+		}
+
 
 		$this->load->model('crud_model');
 
@@ -149,6 +162,7 @@ class Crud extends CI_Controller {
 
 		redirect("crud/read/$id", 'location');
 	} // end delete function
+
 
 
 
