@@ -72,11 +72,23 @@ class Crud_model extends CI_Model{
       // 1: WHERE item_id is the id of the letter:
       // 2: WHERE user_id is the id of the person logged in
 
+      $this->db->select('*');
+      $this->db->from('letter');
+      $this->db->where('lid', $item_id);
+      $this->db->where('auth_id', $user_id);
+      $query = $this->db->get(); //indicating that this person got that item
+
+      if ($query->num_rows() > 0) {
+          return $query->result();
+      }else {
+          return FALSE;
+      }
+
+
+
       // do a basic select, if it returns something, then this user owns that item.
       // if it returns FALSE, then nothing was found in the db for this user AND that item, so they DO NOT own it.... in the controller we kick them out.
       // $query = $this->db->get('letters');
-
-
 
 
       if ($query->num_rows() > 0) {

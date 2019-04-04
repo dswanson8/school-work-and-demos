@@ -17,12 +17,12 @@ class Crud extends CI_Controller {
 
 	public function write(){
 
+		// login security
 		if (!$this->tank_auth->is_logged_in()) {
 			redirect('/auth/login/');
 		} else {
 			$data['auth_id']	= $this->tank_auth->get_user_id();
 		}
-
 
 		// validation library: not autoloaded, so we must load this here or in a construct.
 		$this->load->library('form_validation');
@@ -57,7 +57,7 @@ class Crud extends CI_Controller {
 			$this->session->set_flashdata('message', 'Insert Successful');
 
 
-			redirect('crud/read', 'location');
+			redirect('crud/write', 'location');
 		}
 
 	} // end function write
@@ -112,6 +112,14 @@ class Crud extends CI_Controller {
 
 
 		$this->load->model('crud_model');
+		// CHECK FOR OWNERSHIP OF THE ITEM
+		$this->load->model('crud_model');
+
+		if (!$this->crud_model->check_owner($id, $data['auth_id'])) {
+			echo "Not your item";
+			exit();
+		}
+
 
 		// validation library: not autoloaded, so we must load this here or in a construct.
 		$this->load->library('form_validation');
