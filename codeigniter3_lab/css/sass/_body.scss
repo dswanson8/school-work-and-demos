@@ -1,0 +1,18 @@
+body {
+    background-color: blanchedalmond !important;
+    background-image: none;
+    p {
+        font-family: 'Raleway', sans-serif;
+    }
+    h2, h3, h4 {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+        font-variant: small-caps;
+    }
+    @media screen and (min-width: 900px){
+        p {
+            font-size: 20px;
+            color: black;
+        }
+    }
+}

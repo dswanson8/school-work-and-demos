@@ -1,0 +1,32 @@
+.places {
+    h1, h2, h3 {
+        color: black;
+    }
+    h1, h2 {
+        font-family: 'Dancing Script', cursive;
+    }
+    h1 {
+        font-size: 8em;
+        color: dimgray;
+        font-weight: bold;
+        border-bottom: 5px solid white;
+    }
+    &__container {
+        background: #fcfcfc;
+        padding: 20px;
+
+        .heading {
+            height: 500px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(-8deg, rgba(117, 117, 117, 0.48), rgba(234, 234, 234, 0.42), rgba(177, 177, 177, 0.08)), url(../pictures/places-bkg.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    } // END CONTAINER
+
+
+} // END PLACES

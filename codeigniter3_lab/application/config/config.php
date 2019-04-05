@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://dswanson8.dmitstudent.ca/dmit2503/codeigniter3_student/';
+$config['base_url'] = 'http://dswanson8.dmitstudent.ca/dmit2503/labs/lab7/codeigniter3_lab/';
 
 /*
 |--------------------------------------------------------------------------
