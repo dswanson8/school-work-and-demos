@@ -1,0 +1,77 @@
+/*=====================================
+        ++ DEFAULT STYLES
+=====================================*/
+html, body, header {
+  height: 100%;
+}
+
+/*=====================================
+        ++ BODY STYLES
+=====================================*/
+body li {
+  list-style: none;
+}
+
+/*=====================================
+        ++ TYPOGRAPHY STYLES
+=====================================*/
+/*=====================================
+        ++ NAV STYLES
+=====================================*/
+.fixed-navigation .navigation-container {
+  background-color: #3c5265;
+}
+.fixed-navigation .navigation-container .logo {
+  width: 30px;
+  height: auto;
+  vertical-align: sub;
+}
+.fixed-navigation .dropdown-container .dropDown-list li {
+  border-right: 4px groove #71a7bb;
+  margin-bottom: 10px;
+  font-size: 1em;
+  width: 50%;
+  margin-left: auto;
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .fixed-navigation .dropdown-container .dropDown-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fixed-navigation .dropdown-container .dropDown-list li {
+    border-right: 0;
+    border-bottom: 4px groove #71a7bb;
+    text-align: center;
+    margin: 10px;
+    padding-right: 0;
+  }
+}
+
+/*=====================================
+        ++ HEADER STYLES
+=====================================*/
+header {
+  background-image: url("../image/header-bkg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: snow;
+  position: relative;
+}
+header .header-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*=====================================
+        ++ MAIN STYLES
+=====================================*/
+/*=====================================
+        ++ FOOTER STYLES
+=====================================*/
+
+/*# sourceMappingURL=style.css.map */
