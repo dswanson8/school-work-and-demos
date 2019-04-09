@@ -4,8 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <h1>Create New Letter</h1>
 
 <?php echo form_open_multipart('crud/write') ?>
-<!-- function to do image upload -->
-<?php echo form_open_multipart('upload/do_upload');?>
 
 <div class="form-group">
   <label for="letter">Letter</label>
@@ -21,14 +19,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="form-group">
 	<input type="file" name="userfile" size="20" />
-
-	<br /><br />
-
-	<input type="submit" value="upload" />
 </div>
 
 <div class="form-group">
-  <input type="submit" class="btn">
+
+	<div class="file_upload">
+		<h3>Your file was successfully uploaded!</h3>
+
+		<ul>
+			<?php foreach ($upload_data as $item => $value):?>
+
+				<li><?php echo $item;?>: <?php echo $value;?></li>
+
+			<?php endforeach; ?>
+		</ul>
+
+		<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+	</div>
+
+
+	<input type="submit" class="btn">
+	
 </div>
 
 
