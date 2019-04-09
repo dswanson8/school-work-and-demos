@@ -433,4 +433,7 @@ body {
         font-size: 1em;
         border-bottom: 1px #a5a5a5 solid; }
 
+.blogPost .col-6 {
+  width: 300px; }
+
 /*# sourceMappingURL=output.css.map */

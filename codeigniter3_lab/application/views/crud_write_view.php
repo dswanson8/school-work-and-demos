@@ -18,25 +18,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="form-group">
-	<input type="file" name="userfile" size="20" />
+	<label for="address">Address:</label>
+	<div class="col-6">
+		<input type="text" class="form-control" name="address" value="<?php echo set_value('address') ?>">
+	</div>
+	<?php echo form_error('address') ?>
 </div>
 
 <div class="form-group">
-
-	<div class="file_upload">
-		<h3>Your file was successfully uploaded!</h3>
-
-		<ul>
-			<?php foreach ($upload_data as $item => $value):?>
-
-				<li><?php echo $item;?>: <?php echo $value;?></li>
-
-			<?php endforeach; ?>
-		</ul>
-
-		<p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+	<label for="phone">Phone:</label>
+	<div class="col-6">
+		<input type="text" class="form-control" name="phone" value="<?php echo set_value('phone') ?>">
 	</div>
+	<?php echo form_error('phone') ?>
+</div>
 
+<div class="form-group">
 
 	<input type="submit" class="btn">
 	

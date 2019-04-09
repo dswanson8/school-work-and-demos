@@ -12,7 +12,10 @@
 			
 
 		    <div class="main">
-		        <div class="main__description"><p><?php echo $row->description; ?></p></div>
+		        <div class="main__description">
+		        	<p><?php echo $row->description; ?></p>
+		        	<p><?php echo $row->address; ?></p>
+		        </div>
 			    <div class="blog_author">
 			        <p>Post created by <span><?php echo $row->username; ?></span></p>
 			    </div>
