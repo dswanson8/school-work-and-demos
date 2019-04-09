@@ -11,6 +11,7 @@
         font-weight: bold;
         border-bottom: 5px solid white;
     }
+
     &__container {
         background: #fcfcfc;
         padding: 20px;
@@ -25,7 +26,57 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+
         }
+
+        @media screen and (min-width: 1000px) {
+            .singlePage_heading {
+                border-bottom: 5px solid #bdbdbd !important;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+
+                font-size: 8em;
+                color: dimgray;
+                font-weight: bold;
+                border-bottom: 5px solid white;
+            }
+            
+        } // emd media screen @1000px
+
+
+        .main {
+
+            margin: 60px;
+            border-right: 8px groove rgb(209, 209, 209);
+
+            h3 {
+                font-size: 3em;
+            }
+
+            &__description {
+                padding: 20px;
+                font-size: 1.5em;
+            }
+
+            .blog_author {
+            
+                display: flex;
+                justify-content: flex-end;
+                p {
+                    font-style: italic;
+                    color: tomato;
+                    padding: 10px;
+                    font-size: 1em;
+                    border-bottom: 1px #a5a5a5 solid;
+                }
+
+            }
+
+            
+        } // end of main
+
+
     } // END CONTAINER
 
 
