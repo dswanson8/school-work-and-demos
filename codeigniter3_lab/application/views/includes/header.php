@@ -77,13 +77,25 @@
 
             <!-- dropdown -->
              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Birds<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="<?php echo base_url()?>birds">Birds. Everywhere.</a></li>
+                <li class="divider"></li>
+                <li><a href="<?php echo base_url()?>birds/loon">Loon</a></li>
+                <li><a href="<?php echo base_url()?>birds/falcon">Falcon</a></li>
+                <li><a href="<?php echo base_url()?>birds/sparrow">Sparrow</a></li>
+              </ul>
+            </li>
+          <!-- \ dropdown -->
+
+
+            <!-- dropdown -->
+             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Places<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="<?php echo base_url()?>crud/read">Let's Eat</a></li>
                 <li class="divider"></li>
-                <li><a href="<?php echo base_url()?>crud/read">Read</a></li>
-                <li><a href="<?php echo base_url()?>crud/write">Write</a></li>
-                <li><a href="<?php echo base_url()?>crud/update">update</a></li>
+                <li><a href="<?php echo base_url()?>crud/write">New Spot? Write it!</a></li>
               </ul>
             </li>
       		<!-- \ dropdown -->

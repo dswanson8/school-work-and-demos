@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 
     <div class="home__thumbnail">
-        <button type="button" name="button">Check it out</button>
+        <a href="<?php echo base_url()?>crud/read"" type="button" name="button" class="btn btn-primary">Check it out</a>
     </div>
 
 </div>
