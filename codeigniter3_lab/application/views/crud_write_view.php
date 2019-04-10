@@ -52,26 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<h3>Upload an image to go along with your post.</h3>
 			<div>
 
-				<div class="form-group">
-					<?php 
-						$attributes = array('name' => 'file_upload_form', 'id' => 'file_upload_form');
-	                    echo form_open_multipart($this->uri->uri_string(), $attributes);
-					?>
-					<p><input class="btn btn-secondary" name="file_name" id="file_name" readonly="readonly" type="file" /></p>
-					<p class="button_container"><input class="btn btn-primary" name="file_upload" value="Upload" type="submit" /></p>
-
-					<div>
-						
-						<?php 
-							if (isset($success) && strlen($success)) {
-			                    echo '<div class="success">';
-			                    echo '<p>' . $success . '</p>';
-			                    echo '</div>';
-			                }
-						 ?>
-						 
-					</div>
-				</div>
 
 			</div>
 		</form>
