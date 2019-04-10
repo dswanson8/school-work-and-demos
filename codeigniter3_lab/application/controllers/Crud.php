@@ -29,7 +29,7 @@ class Crud extends CI_Controller {
 		$this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
 		$this->form_validation->set_rules('letter', 'Letter', 'required|min_length[4]');
 		$this->form_validation->set_rules('description', 'Description', 'required|min_length[20]|max_length[800]');
-		$this->form_validation->set_rules('address', 'Address:', 'required|min_length[5]|max_length[20]');
+		$this->form_validation->set_rules('address', 'Address', 'required|min_length[5]|max_length[20]');
 		$this->form_validation->set_rules('mobile', 'Mobile Number ', 'required|regex_match[/^[0-9]{10}$/]'); //{10} for 10 digits number
 
 		if ($this->form_validation->run() == FALSE) {//validation not passed, either showing to user for the first time or errors

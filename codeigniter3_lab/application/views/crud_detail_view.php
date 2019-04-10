@@ -9,12 +9,12 @@
 		<div class="places__container">
 
     		<h2 class="singlePage_heading"><?php echo $row->letter; ?></h2>
-			
 
 		    <div class="main">
 		        <div class="main__description">
 		        	<p><?php echo $row->description; ?></p>
 		        	<p><?php echo $row->address; ?></p>
+		        	<p><?php echo $row->phone; ?></p>
 		        </div>
 			    <div class="blog_author">
 			        <p>Post created by <span><?php echo $row->username; ?></span></p>
