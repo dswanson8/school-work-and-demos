@@ -1,0 +1,34 @@
+.writeView {
+
+	display: flex;
+
+	form {
+		background-image: none;
+		background-color: rgb(235, 235, 235);
+	}
+
+	&__col-one {
+		width: 60%;
+	}
+
+	&__col-two {
+		width: 40%;
+		margin-left: 20px;
+
+		h3 {
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		.button_container {
+			width: 100%;
+
+			input {
+				width: 100%;
+			}
+
+		}
+		
+	}
+
+}

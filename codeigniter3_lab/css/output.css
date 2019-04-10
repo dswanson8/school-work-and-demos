@@ -520,4 +520,32 @@ body h2, body h3, body h4 {
   width: 300px;
 }
 
+/*--------------------------------------------------------------
+# Write Post
+--------------------------------------------------------------*/
+.writeView {
+  display: flex;
+}
+.writeView form {
+  background-image: none;
+  background-color: #ebebeb;
+}
+.writeView__col-one {
+  width: 60%;
+}
+.writeView__col-two {
+  width: 40%;
+  margin-left: 20px;
+}
+.writeView__col-two h3 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.writeView__col-two .button_container {
+  width: 100%;
+}
+.writeView__col-two .button_container input {
+  width: 100%;
+}
+
 /*# sourceMappingURL=output.css.map */
