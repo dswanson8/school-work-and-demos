@@ -21,7 +21,7 @@ if ($results) {
 <div class="blogPost">
   
     <div class="form-group">
-      <label for="letter">Letter</label>
+      <label for="letter">Post Title</label>
       <input type="text" name="letter" class="form-control" value="<?php echo set_value('letter', $letter) ?>">
       <?php echo form_error('letter') ?>
     </div>

@@ -18,11 +18,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="main">
                 <h3><?php echo $row->letter; ?></h3>
-                <div class="main__description"><?php echo $row->description; ?></div>
-                <a href="<?php echo base_url(); ?>crud/detail/<?php echo $row->lid?>" class="btn btn-success btn-sm">Read More...</a>
+                <div class="main__description">
+                    <?php echo $row->description; ?> 
+                </div>
+                <div class="main__button">
+                    <a href="<?php echo base_url(); ?>crud/detail/<?php echo $row->lid?>" class="btn btn-success btn-sm">Read More...</a> 
+                </div>
             </div>
 
-            <hr>
 
             <?php endforeach; ?>
 

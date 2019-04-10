@@ -11,6 +11,9 @@
         font-weight: bold;
         border-bottom: 5px solid white;
     }
+    h3 {
+        color: tomato !important;
+    }
 
     &__container {
         background: #fcfcfc;
@@ -30,11 +33,13 @@
         }
 
         @media screen and (min-width: 1000px) {
+
             .singlePage_heading {
                 border-bottom: 5px solid #bdbdbd !important;
                 width: 60%;
                 text-align: center;
-                margin: 0 auto;
+                margin: 40px auto;
+                padding: 20px 0;
 
                 font-size: 8em;
                 color: dimgray;
@@ -48,7 +53,9 @@
         .main {
 
             margin: 60px;
-            border-right: 8px groove rgb(209, 209, 209);
+            border-right: 8px groove #d1d1d1;
+            box-shadow: 6px 10px 6px 2px rgba(0, 0, 0, 0.3);
+            padding: 40px;
 
             h3 {
                 font-size: 3em;
@@ -59,14 +66,37 @@
                 font-size: 1.5em;
             }
 
+            &__details {
+                margin-top: 40px;
+                background-color: #b6a7761a;
+                padding: 10px;
+                width: 50%;
+                box-shadow: 0 0 2px 2px #0000004d;
+
+                .fas {
+                    margin-right: 20px;
+                }
+            }
+
+            &__imageBlock {
+                background-color: darkkhaki;
+                height: 250px;
+                margin: 2em 0;
+            }
+
+            &__button {
+                display: flex;
+                justify-content: flex-end;
+            }
+
             .blog_author {
             
                 display: flex;
                 justify-content: flex-end;
+                margin: 10px;
                 p {
                     font-style: italic;
                     color: tomato;
-                    padding: 10px;
                     font-size: 1em;
                     border-bottom: 1px #a5a5a5 solid;
                 }
