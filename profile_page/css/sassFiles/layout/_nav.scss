@@ -8,11 +8,19 @@
 		    height: auto;
 		    vertical-align: sub;
 		}
+
 	}
 
 	.dropdown-container {
 
+    	background-color: rgba(255, 255, 255, 0.8);
+    	transition: all 0.3s cubic-bezier(0.25, 0.1, 0.51, 1.04) 0s;
+
+
 		.dropDown-list {
+
+    		font-size: 18px;
+
 
 			li {
 			    border-right: 4px groove #71a7bb;
