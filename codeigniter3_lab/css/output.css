@@ -526,26 +526,32 @@ body h2, body h3, body h4 {
 .writeView {
   display: flex;
 }
+.writeView__heading {
+  width: 60%;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-left: 11px groove #e3a7a7;
+  border-radius: 25px 0 0 25px;
+}
+.writeView__heading h2 {
+  font-size: 4em;
+  color: tomato;
+  font-style: italic;
+  letter-spacing: 2px;
+}
 .writeView form {
   background-image: none;
-  background-color: #ebebeb;
+  background-color: #6c6c6c;
+  border-radius: 0 25px 25px 0 !important;
+  color: lightsalmon;
 }
 .writeView__col-one {
-  width: 60%;
+  width: 100%;
+  margin: 0 auto;
 }
-.writeView__col-two {
-  width: 40%;
-  margin-left: 20px;
-}
-.writeView__col-two h3 {
+.writeView__col-one h3 {
   margin: 0;
   margin-bottom: 20px;
-}
-.writeView__col-two .button_container {
-  width: 100%;
-}
-.writeView__col-two .button_container input {
-  width: 100%;
 }
 
 /*# sourceMappingURL=output.css.map */

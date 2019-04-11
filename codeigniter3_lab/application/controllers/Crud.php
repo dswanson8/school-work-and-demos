@@ -4,6 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Crud extends CI_Controller {
 
 
+	public function __construct(){
+		parent::__construct();
+
+		$this->load->helper(array('form', 'url'));
+		$this->load->library('image_lib');
+
+	}
+
+
 	public function index()
 	{
 
@@ -26,10 +35,22 @@ class Crud extends CI_Controller {
 
 		// validation library: not autoloaded, so we must load this here or in a construct.
 		$this->load->library('form_validation');
+
 		$this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
 		$this->form_validation->set_rules('letter', 'Letter', 'required|min_length[4]');
 		$this->form_validation->set_rules('description', 'Description', 'required|min_length[20]|max_length[800]');
 		$this->form_validation->set_rules('address', 'Address', 'required|min_length[5]|max_length[20]');
+
+		// upload file settings
+		$config['upload_path'] = 'pictures';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '100000';
+		$config['max_width']  = '1024';
+		$config['max_height']  = '768';
+
+		$this->load->library('upload', $config);
+		// $this->upload->initialize($config);
+
 
 		if ($this->form_validation->run() == FALSE) {//validation not passed, either showing to user for the first time or errors
 
@@ -38,29 +59,54 @@ class Crud extends CI_Controller {
 			$this->load->view('includes/footer');
 
 		} else {//validaton has passed
-			// echo "SUCCESS";
 
-			// get the info from the form; put that into an array to pass to the model.
-			$data['letter'] = $this->input->post('letter');
-			$data['description'] = $this->input->post('description');
-			$data['address'] = $this->input->post('address');
-			$data['phone'] = $this->input->post('phone');
+			if ($this->upload->do_upload('file_name')) {
+				// upload functionality
+				$upload_data = $this->upload->data();
 
-			// testing to see what is in the array.
-				// echo "<pre>";
-				// print_r($data);
-				// echo "</pre>";
+				// $config['image_library'] = 'gd2';
+				// $config['source_image'] = 'pictures/'.$data['img'];
+				// $config['create_thumb'] = TRUE;
+				// $config['width'] = 350;
+				// $config['height'] = 350;
+				// $config['new_image'] ='pictures/thumb/'.$data['img'];
 
-			$this->load->model('crud_model');
-			$this->crud_model->insert_letter($data);
-
-			// using flashdata (part of the session library which we have autloaded)
-
-			// flashdata: loads a session available for the next page load only
-			$this->session->set_flashdata('message', 'Insert Successful');
+				// $this->load->library('image_lib', $config);
+				$this->load->library('upload', $config);
+				// $this->image_lib->initialize($config);
+				// $this->image_lib->resize();
+				// $data['thumbnail'] = $upload_data['raw_name'].'_thumb'.$upload_data['file_ext'];
+				// get the info from the form; put that into an array to pass to the model.
 
 
-			redirect('crud/write', 'location');
+				$data['file_name'] = $upload_data['file_name'];
+				$data['letter'] = $this->input->post('letter');
+				$data['description'] = $this->input->post('description');
+				$data['address'] = $this->input->post('address');
+				$data['phone'] = $this->input->post('phone');
+
+				
+				$this->load->model('crud_model');
+
+				$this->crud_model->insert_letter($data);
+
+				// using flashdata (part of the session library which we have autloaded)
+
+				// flashdata: loads a session available for the next page load only
+				$this->session->set_flashdata('message', 'Insert Successful');
+
+
+				redirect('crud/write', 'location');
+			} else {
+							
+				$this->load->view('includes/header');
+				$this->load->view('crud_write_view');
+				$this->load->view('includes/footer');
+			}
+
+
+
+
 		}
 
 	} // end function write

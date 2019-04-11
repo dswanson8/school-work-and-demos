@@ -2,33 +2,38 @@
 
 	display: flex;
 
+	&__heading {
+		width: 60%;
+		padding: 20px;
+		background-color: whitesmoke;
+		border-left: 11px groove #e3a7a7;
+		border-radius: 25px 0 0 25px;
+
+		h2 {
+			font-size: 4em;
+			color: tomato;
+			font-style: italic;
+			letter-spacing: 2px;
+		}
+	}
+
+
 	form {
 		background-image: none;
-		background-color: rgb(235, 235, 235);
+		background-color: #6c6c6c;
+		border-radius: 0 25px 25px 0 !important;
+		color: lightsalmon;
 	}
 
 	&__col-one {
-		width: 60%;
-	}
-
-	&__col-two {
-		width: 40%;
-		margin-left: 20px;
+		width: 100%;
+		margin: 0 auto;
 
 		h3 {
 			margin: 0;
 			margin-bottom: 20px;
 		}
 
-		.button_container {
-			width: 100%;
-
-			input {
-				width: 100%;
-			}
-
-		}
-		
 	}
 
 }
