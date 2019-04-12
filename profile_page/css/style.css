@@ -25,6 +25,9 @@ body main h2 {
 body main p, body main li, body main a {
   font-family: "Titillium Web", sans-serif;
 }
+body main p {
+  font-size: 18px;
+}
 
 /*=====================================
         ++ NAV STYLES
@@ -38,19 +41,25 @@ body main p, body main li, body main a {
   vertical-align: sub;
 }
 .fixed-navigation .dropdown-container {
-  background-color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.51, 1.04) 0s;
 }
 .fixed-navigation .dropdown-container .dropDown-list {
   font-size: 18px;
 }
 .fixed-navigation .dropdown-container .dropDown-list li {
-  border-right: 4px groove #71a7bb;
-  margin-bottom: 10px;
-  font-size: 1em;
-  width: 50%;
+  border-bottom: 4px groove #71a7bb;
+  margin-bottom: 20px;
   margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  font-size: 1em;
+  width: 80%;
   padding-right: 10px;
+  text-align: center;
+  color: snow;
+}
+.fixed-navigation .dropdown-container .dropDown-list li a {
+  color: #f6f6f6;
 }
 @media screen and (min-width: 768px) {
   .fixed-navigation .dropdown-container .dropDown-list {
@@ -111,12 +120,31 @@ header .header-container .sub-title span {
         ++ MAIN STYLES
 =====================================*/
 main .section {
-  padding: 10px;
+  margin-top: 2em;
 }
 main .section h2 {
-  text-align: center;
   color: #616161;
+  text-align: left;
+  border-bottom: groove 8px rgba(102, 178, 205, 0.3);
+  width: 80%;
+  padding-bottom: 10px;
   margin: 1em 0;
+}
+main .profile_section__image {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+main .profile_section__image img {
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(55.4%);
+}
+main .profile_section__contentWrap {
+  background-color: #f5f5f5;
+  padding: 20px;
+  color: #7e7e7e;
 }
 /*=====================================
         ++ FOOTER STYLES
