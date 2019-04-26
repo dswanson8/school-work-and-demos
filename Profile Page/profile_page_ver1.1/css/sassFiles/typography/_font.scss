@@ -6,11 +6,6 @@ body {
 			font-family: 'Open Sans', sans-serif;
 		}
 
-		h2 {
-			font-weight: 700;
-			font-size: 3em;
-		}
-
 		p, li, a {
 			font-family: 'Titillium Web', sans-serif;
 		}
@@ -21,4 +16,15 @@ body {
 
 	}
 
+}
+
+@media screen and (max-width: 545px) {
+	body {
+		main {
+			h2 {
+				font-weight: 700;
+				font-size: 2em;
+			}
+		}
+	}
 }
