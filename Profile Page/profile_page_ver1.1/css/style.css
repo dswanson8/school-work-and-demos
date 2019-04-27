@@ -16,7 +16,7 @@ body li {
 /*=====================================
         ++ TYPOGRAPHY STYLES
 =====================================*/
-body main h1, body main h2, body main h3, body main h4 {
+body main h1, body main h2, body main h3, body main h4, body main h5 {
   font-family: "Open Sans", sans-serif;
 }
 body main p, body main li, body main a {
@@ -140,16 +140,49 @@ main section h3 {
   margin-left: 20px;
   margin-top: 1em;
   margin-right: 20px;
-  color: whitesmoke;
-  background-color: #868686;
+  color: #8b9a9f;
+  background-color: #f6f6f6;
+}
+main section h5 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 2em;
 }
 main .section-aboutMe img {
-  width: 350px;
+  width: 90%;
   box-shadow: 6px 6px 1px 1px #828282;
   margin-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+main .section-webStats .section-otherSkills .fas.fa-angle-double-right {
+  color: #629ab4;
+}
+main .section-webStats .section-otherSkills .otherSKills-list li {
+  margin-bottom: 0.5em;
+  font-style: italic;
+  color: slategray;
+  font-weight: bold;
+}
+main .section-webStats .card {
+  box-shadow: 0 0 7px 1px #cecece;
+}
+main .section-webStats .card .card-body {
+  background-color: #829cac;
+  color: #fffafa;
+}
+main .section-portfolio .portfolio-heading {
+  color: #fff;
+  background-color: #2b606f;
+}
+main .section-portfolio .portfolio-piece {
+  height: 225px;
+  overflow-y: hidden;
+  margin-bottom: 2em;
+}
+main .section-portfolio .portfolio-piece img {
+  width: 100%;
 }
 
 /*=====================================
@@ -220,6 +253,77 @@ footer {
   background-color: lightgreen;
 }
 
+.hidden {
+  display: none;
+}
+
+/*=====================================
+        ++ VIEWS
+=====================================*/
+@media screen and (min-width: 575px) {
+  header .header-container h1 {
+    font-size: 3em;
+  }
+
+  main section h2 {
+    margin-top: 1em;
+  }
+  main .section-aboutMe img {
+    max-width: 400px;
+  }
+  main .section-webStats .card-container {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 700px) {
+  main section {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  main section p {
+    font-size: 20px;
+  }
+  main section li {
+    font-size: 18px;
+  }
+  main .section-webStats .card-container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  main .section-portfolio .portfolio-piece-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  main .section-portfolio .portfolio-piece-wrap .portfolio-piece {
+    margin-bottom: 0;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main section h2 {
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #868686;
+  }
+  main section h3 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+  main .section-aboutMe img {
+    margin-bottom: 0;
+  }
+  main .section-aboutMe .aboutMe-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /*=====================================
         ++ FOOTER STYLES
 =====================================*/

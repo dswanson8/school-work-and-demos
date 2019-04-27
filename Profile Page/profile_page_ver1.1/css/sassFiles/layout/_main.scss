@@ -17,20 +17,69 @@ main {
             margin-left: 20px;
             margin-top: 1em;
             margin-right: 20px;
-            color: whitesmoke;
-            background-color: #868686;
+            color: #8b9a9f;
+            background-color: #f6f6f6;
+        }
+        h5 {
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-weight: 2em;
         }
     }
 
     .section-aboutMe {
         img {
-            width: 350px;
+            width: 90%;
             box-shadow: 6px 6px 1px 1px #828282;
             margin-bottom: 2em;
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
+    }
+
+
+    .section-webStats {
+        .section-otherSkills {
+            .fas.fa-angle-double-right {
+                color: #629ab4;
+            }
+            .otherSKills-list {
+                li {
+                    margin-bottom: 0.5em;
+                    font-style: italic;
+                    color: slategray;
+                    font-weight: bold;
+                }
+            }
+        }
+        .card {
+            box-shadow: 0 0 7px 1px #cecece;
+            .card-body {
+                background-color: #829cac;
+                color: #fffafa;
+            }
+        }
+    }
+    
+    
+    .section-portfolio {
+
+        .portfolio-heading {
+            color: #fff;
+            background-color: #2b606f;
+        }
+        .portfolio-piece {
+            height: 225px;
+            overflow-y: hidden;
+            margin-bottom: 2em;
+
+            img {
+                width: 100%;
+            }
+
+        }
+
     }
 
 }
