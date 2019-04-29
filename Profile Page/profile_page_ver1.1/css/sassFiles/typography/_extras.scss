@@ -1,43 +1,46 @@
 // blockquote styling
-.quotation{
-    font-size: 1em;
-    font-style: italic;
-    //margin: 0 auto;
-    quotes: "\201C""\201D""\2018""\2019";
-    padding: 10px 20px;
-    line-height: 1.4;
-    color: #5b7b95;
-    margin-bottom: 0;
-  }
-  
-  .quotation:before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: -10px;
-    position: relative;
-    top: 0;
-    color: #ccc;
-    font-size: 2em;
-  }
-  .quotation::after {
-    content: close-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 4px;
-    position: relative;
-    top: 8px;
-    color: #ccc;
-    font-size: 2em;
-  }
-  footer{
-    margin:0;
-    text-align: right;
-    font-size: 0.8em;
-    font-style: italic;
-  }
+
+.aboutMe-content {
+  .quotation{
+      font-size: 1em;
+      font-style: italic;
+      //margin: 0 auto;
+      quotes: "\201C""\201D""\2018""\2019";
+      padding: 10px 20px;
+      line-height: 1.4;
+      color: #5b7b95;
+      margin-bottom: 0;
+    }
+    
+    .quotation:before {
+      content: open-quote;
+      display: inline;
+      height: 0;
+      line-height: 0;
+      left: -10px;
+      position: relative;
+      top: 0;
+      color: #ccc;
+      font-size: 2em;
+    }
+    .quotation::after {
+      content: close-quote;
+      display: inline;
+      height: 0;
+      line-height: 0;
+      left: 4px;
+      position: relative;
+      top: 8px;
+      color: #ccc;
+      font-size: 2em;
+    }
+    .footer-quote{
+      margin:0;
+      text-align: right;
+      font-size: 0.8em;
+      font-style: italic;
+    }
+}
   //////////////// end of blockquote styling
 
 

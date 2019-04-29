@@ -20,6 +20,12 @@
             img {
                 max-width: 400px;
             }
+            .aboutMe-contact {
+                .card {
+                    max-width: 500px;
+                    margin: auto;
+                }
+            }
         }
         
         .section-webStats {
@@ -49,6 +55,12 @@
 
         }
 
+        .section-aboutMe {
+            .aboutMe-content {
+                align-self: center;
+            }
+        }
+
         .section-webStats {
             .card-container {
                 max-width: 1200px;
@@ -60,6 +72,10 @@
 
 
         .section-portfolio {
+            h3 {
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
             .portfolio-piece-wrap {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -67,6 +83,31 @@
                 .portfolio-piece {
                     margin-bottom: 0;
                     height: 300px;
+                }
+            }
+            .development-wrap {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                box-shadow: 0px 0px 3px 4px #55677733;
+                padding: 20px;
+
+                .development-title {
+                    h4 {
+                        border-bottom: 15px groove #b5cede;
+                        width: 80%;
+                        padding-bottom: 10px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-size: 1.5em;
+                    }
+                    p {
+                        margin-top: 1em;
+                    }
+                }
+
+                .single-piece {
+                    width: 300px;
+                    max-width: 400px;;
                 }
             }
         }

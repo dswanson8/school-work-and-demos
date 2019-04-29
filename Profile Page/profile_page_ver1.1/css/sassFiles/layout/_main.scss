@@ -36,6 +36,27 @@ main {
             margin-right: auto;
             display: block;
         }
+        .aboutMe-contact {
+            .card {
+                box-shadow: 0 0 4px 4px gainsboro;
+            }
+            .list-group {
+                li {
+                    background-color: #516e81;
+                    color: white;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        color: #629ab4;
+                    }
+                }
+                i {
+                    margin-right: 1em;
+                }
+            }
+        }    
     }
 
 
@@ -79,6 +100,31 @@ main {
             }
 
         }
+        .development-wrap {
+            .development-title {
+                h4 {
+                    letter-spacing: 2px;
+                    color: teal;
+                    margin: 20px 0;
+                    font-size: 1.2em;
+                }
+            }
+            .portfolio-piece-wrap {
+                img {
+                    width: 100%;
+                }
+                .project-link {
+                    margin-top: 1em;
+                    background-color: #c1c1c1;
+                    border-color: #cecece;
+
+                }
+                .project-link:hover {
+                    background-color: #516e81 !important;
+                }
+            }
+        }
+
 
     }
 

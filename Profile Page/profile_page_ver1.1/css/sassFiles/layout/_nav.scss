@@ -1,6 +1,11 @@
 
 .fixed-navigation{
 
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+
 	.navigation-container {
 		background-color: rgb(60, 82, 101);
 		.logo {

@@ -35,6 +35,12 @@ body main p {
 /*=====================================
         ++ NAV STYLES
 =====================================*/
+.fixed-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 .fixed-navigation .navigation-container {
   background-color: #3c5265;
 }
@@ -97,7 +103,7 @@ header .header-container {
   transform: translate(-50%, -50%);
 }
 header .header-container h1 {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Poiret One", cursive;
   font-size: 3em;
   margin: 0.67em 0;
   font-weight: 700;
@@ -156,6 +162,23 @@ main .section-aboutMe img {
   margin-right: auto;
   display: block;
 }
+main .section-aboutMe .aboutMe-contact .card {
+  box-shadow: 0 0 4px 4px gainsboro;
+}
+main .section-aboutMe .aboutMe-contact .list-group li {
+  background-color: #516e81;
+  color: white;
+}
+main .section-aboutMe .aboutMe-contact .list-group li a {
+  text-decoration: none;
+  color: white;
+}
+main .section-aboutMe .aboutMe-contact .list-group li a:hover {
+  color: #629ab4;
+}
+main .section-aboutMe .aboutMe-contact .list-group i {
+  margin-right: 1em;
+}
 main .section-webStats .section-otherSkills .fas.fa-angle-double-right {
   color: #629ab4;
 }
@@ -184,11 +207,28 @@ main .section-portfolio .portfolio-piece {
 main .section-portfolio .portfolio-piece img {
   width: 100%;
 }
+main .section-portfolio .development-wrap .development-title h4 {
+  letter-spacing: 2px;
+  color: teal;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+main .section-portfolio .development-wrap .portfolio-piece-wrap img {
+  width: 100%;
+}
+main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link {
+  margin-top: 1em;
+  background-color: #c1c1c1;
+  border-color: #cecece;
+}
+main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link:hover {
+  background-color: #516e81 !important;
+}
 
 /*=====================================
         ++ EXTRA STYLES (grabbed from web)
 =====================================*/
-.quotation {
+.aboutMe-content .quotation {
   font-size: 1em;
   font-style: italic;
   quotes: "“" "”" "‘" "’";
@@ -197,8 +237,7 @@ main .section-portfolio .portfolio-piece img {
   color: #5b7b95;
   margin-bottom: 0;
 }
-
-.quotation:before {
+.aboutMe-content .quotation:before {
   content: open-quote;
   display: inline;
   height: 0;
@@ -209,8 +248,7 @@ main .section-portfolio .portfolio-piece img {
   color: #ccc;
   font-size: 2em;
 }
-
-.quotation::after {
+.aboutMe-content .quotation::after {
   content: close-quote;
   display: inline;
   height: 0;
@@ -221,8 +259,7 @@ main .section-portfolio .portfolio-piece img {
   color: #ccc;
   font-size: 2em;
 }
-
-footer {
+.aboutMe-content .footer-quote {
   margin: 0;
   text-align: right;
   font-size: 0.8em;
@@ -271,6 +308,10 @@ footer {
   main .section-aboutMe img {
     max-width: 400px;
   }
+  main .section-aboutMe .aboutMe-contact .card {
+    max-width: 500px;
+    margin: auto;
+  }
   main .section-webStats .card-container {
     max-width: 430px;
     margin-left: auto;
@@ -288,11 +329,18 @@ footer {
   main section li {
     font-size: 18px;
   }
+  main .section-aboutMe .aboutMe-content {
+    align-self: center;
+  }
   main .section-webStats .card-container {
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+  }
+  main .section-portfolio h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   main .section-portfolio .portfolio-piece-wrap {
     display: grid;
@@ -302,6 +350,27 @@ footer {
   main .section-portfolio .portfolio-piece-wrap .portfolio-piece {
     margin-bottom: 0;
     height: 300px;
+  }
+  main .section-portfolio .development-wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0px 0px 3px 4px #55677733;
+    padding: 20px;
+  }
+  main .section-portfolio .development-wrap .development-title h4 {
+    border-bottom: 15px groove #b5cede;
+    width: 80%;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
+  main .section-portfolio .development-wrap .development-title p {
+    margin-top: 1em;
+  }
+  main .section-portfolio .development-wrap .single-piece {
+    width: 300px;
+    max-width: 400px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -327,5 +396,21 @@ footer {
 /*=====================================
         ++ FOOTER STYLES
 =====================================*/
+footer {
+  background-color: #303030;
+  padding: 10px;
+  text-align: center;
+  margin-top: 1em;
+}
+footer h2, footer p {
+  font-family: "Poiret One", cursive;
+  color: snow;
+  font-variant: all-small-caps;
+}
+footer hr {
+  height: 5px;
+  background-color: #7d939b;
+  width: 40%;
+}
 
 /*# sourceMappingURL=style.css.map */
