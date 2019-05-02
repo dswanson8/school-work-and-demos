@@ -108,6 +108,8 @@ header .header-container h1 {
   margin: 0.67em 0;
   font-weight: 700;
   color: #4a4a4a;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 1px #4d8589;
 }
 header .header-container .sub-title {
   text-transform: uppercase;
@@ -223,6 +225,19 @@ main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link {
 }
 main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link:hover {
   background-color: #516e81 !important;
+}
+
+.main-project .section-projects .card .project-card-image {
+  height: 9em;
+}
+.main-project .section-projects .modal .modal-image-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+}
+.main-project .section-projects .modal .modal-image-wrap img {
+  width: 100%;
 }
 
 /*=====================================

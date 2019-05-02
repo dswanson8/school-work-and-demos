@@ -1,0 +1,23 @@
+.main-project {
+
+    .section-projects {
+        .card {
+            .project-card-image {
+                height: 9em;
+            }
+        }
+        .modal {
+            .modal-image-wrap {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+                justify-items: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}

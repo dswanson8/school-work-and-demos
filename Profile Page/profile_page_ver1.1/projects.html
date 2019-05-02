@@ -13,13 +13,17 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:400,700" rel="stylesheet">
 
-
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js"></script>
 
 
     <title>DS.DESIGNS - Projects</title>
@@ -44,9 +48,7 @@
                     <!-- NAVIGATION DROPDOWN -->
                     <div class="collapse navbar-collapse text-right p-3 dropdown-container" id="dropDown">
                         <ul class="navbar-nav dropDown-list">
-                            <li class="nav-item"><a href="#profile">Profile</a></li>
-                            <li class="nav-item"><a href="#contact">Contact</a></li>
-                            <li class="nav-item"><a href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a href="index.html">Home</a></li>
                         </ul>
                     </div>
                     <!-- END DROPWDOWN -->
@@ -62,6 +64,7 @@
 
         <div class="container col-12 header-container">
             <h1>Projects</h1>
+            <p>UNDER CONSTRUCTION</p>
         </div>
 
     </header>
@@ -70,10 +73,123 @@
 
 
     <!-- MAIN CONTAINER -->
-    <main>
+    <main class="main-project">
 
         <section class="section-projects">
             <h2>My Projects</h2>
+            <p>Here are some of the projects that I've done in school. Varying projects that utilize different front end languages along with some PHP projects as well.</p>
+
+            <div class="projects-container">
+                <h3>HTML and CSS</h3>
+                <div class="project-wrap center card-deck">
+
+                    <div class="card">
+                        <img src="image/tweaks-logo.png" class="card-img-top project-card-image" alt="">
+                        <div class="card-body">
+                            <h5>TweaksiOS</h5>
+                            <p class="card-text">Creating a single page website with a responsive HTML and CSS foundation, along with Google SEO principles</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#firstProject">View Images</button>
+                            <a href="https://tweaksios.therayg.com" target="_blank" class="btn btn-primary btn-block mt-3" role="button">View Site</a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="firstProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Responsive Layout</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="modal-image-wrap">
+                                                <img src="image/portfolio-piece/tweaks-ios.png" alt="">
+                                                <img src="image/portfolio-piece/tweaks-ios-bestTweaks.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of modal -->
+                    </div>
+
+                    <div class="card">
+                        <img src="image/responsivePage-logo.png" class="card-img-top project-card-image" alt="">
+                        <div class="card-body">
+                            <h5>Responsive Landing Page</h5>
+                            <p class="card-text">Responsive landing page</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-block" data-toggle="modal" data-target="#secondProject">View Images</button>
+                            <a href="https://danneswanson.com/projects/responsive-landingPage/" target="_blank" class="btn btn-primary btn-block mt-3" role="button">View Site</a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="secondProject" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalCenterTitle">Responsive Layout</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="modal-image-wrap">
+                                                <img src="image/portfolio-piece/responsive-landingPage.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of modal -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <h3>JavaScript and Jquery</h3>
+                <div class="project-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <h3>PHP</h3>
+                <div class="project-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
+            <div class="projects-container">
+                <h3>Personal Projects</h3>
+                <div class="project-wrap">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+
         </section>
 
     </main>
@@ -90,7 +206,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
