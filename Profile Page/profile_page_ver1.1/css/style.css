@@ -69,6 +69,10 @@ body main p {
 }
 .fixed-navigation .dropdown-container .dropDown-list li a {
   color: #f6f6f6;
+  text-decoration: none;
+}
+.fixed-navigation .dropdown-container .dropDown-list li:hover {
+  border-bottom-color: aquamarine;
 }
 @media screen and (min-width: 768px) {
   .fixed-navigation .dropdown-container .dropDown-list {

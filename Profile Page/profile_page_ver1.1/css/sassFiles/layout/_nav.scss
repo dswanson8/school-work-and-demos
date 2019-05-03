@@ -39,8 +39,14 @@
 			    color: snow;
 
 			    a {
-			    	color: #f6f6f6;
-			    }
+					color: #f6f6f6;
+					text-decoration: none;
+				}
+
+				
+			}
+			li:hover {
+				border-bottom-color: aquamarine;
 			}
 
 			@media screen and (min-width: 768px){
