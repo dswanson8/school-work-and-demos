@@ -1,6 +1,7 @@
 
-\\\DANNE SWANSON///
-JUNIOR WEB DESIGN AND DEVELOPER
+DANNE SWANSON
+
+--- JUNIOR WEB DESIGN AND DEVELOPER ----
 
 
 Just starting out in the world of Web Development. Here are some of the projects that we have worked on in school in which I will continously update once I get some work in.
