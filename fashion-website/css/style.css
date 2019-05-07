@@ -1,0 +1,541 @@
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	line-height: 1.5;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/*
+--------------------------------------------------------
+******************** Typography ******************
+--------------------------------------------------------
+*/
+
+h1,
+h2,
+h3,
+p {
+	font-family: 'Montserrat', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #04cbd1;
+}
+
+/*
+--------------------------------------------------------
+******************** NAVIGATION ******************
+--------------------------------------------------------
+*/
+
+.site-navigation {
+	width: 100%;
+	padding: 1em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-self: center;
+	background-color: #F8F8F8;
+	z-index: 99;
+}
+
+.site-navigation ul {
+	display: none;
+}
+
+.site-navigation h1 span {
+	font-weight: 300;
+}
+
+.site-navigation span {
+	color: #b5b5b5;
+}
+
+.fa-bars {
+	font-size: 1.5em;
+}
+
+.site-links {
+	padding: 1em;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: -60%;
+	right: 0;
+	width: 100%;
+	z-index: 200;
+	color: #fef7d3;
+	background: #fff;
+	text-align: center;
+}
+
+.site-links ul {
+	font-size: 0.625em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.site-links a {
+	color: black;
+	text-decoration: none;
+}
+
+.site-links a:hover {
+	color: aqua;
+	font-weight: 400;
+}
+
+/*
+--------------------------------------------------------
+********************   HEADER   ******************
+--------------------------------------------------------
+*/
+
+.site-header {
+	width: 100%;
+	height: 19.375em;
+	background: linear-gradient(#000c, #000c), url("../img/home-header-mobilebkg.png");
+	background-repeat: no-repeat;
+	background-size: 100% 170%;
+	background-position: 0% -1%;
+	margin-top: 3.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.site-header-content {
+	text-align: center;
+	z-index: 2;
+	color: #fff;
+}
+
+.site-header-content span {
+	font-weight: 700;
+}
+
+.site-header-content p:first-of-type {
+	font-size: 2.125em;
+}
+
+.site-header-content p:last-of-type {
+	font-size: 1.25em;
+}
+
+.site-header-off-content {
+	position: absolute;
+	bottom: 4.5em;
+	font-size: 1.5em;
+	line-height: 0;
+}
+
+.site-header-off-content p {
+	font-size: 13.5em;
+	letter-spacing: 0.3em;
+	margin-right: -0.3em;
+	color: #fff;
+	opacity: 0.1;
+	height: 0;
+}
+
+/*
+--------------------------------------------------------
+********************   MAIN   ******************
+--------------------------------------------------------
+*/
+
+main {
+	margin: 0.5em auto;
+}
+
+main button:hover {
+	background: #03b2b8;
+}
+
+.main-navigation {
+	display: none;
+}
+
+.mobile-main-navigation {
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.mobile-main-navigation ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.mobile-main-navigation li {
+	font-size: 50%;
+}
+
+section h3 {
+	color: #6a6567;
+}
+
+/* ================ feature ================== */
+
+.feature,
+.feature-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 0.5em;
+	justify-items: center;
+}
+
+.feature {
+	margin-bottom: 0.5em;
+}
+
+.feature h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-top: 0.5em;
+}
+
+section img {
+	width: 100%;
+	height: 100%;
+}
+
+.feature .col-bottom {
+	width: 100%;
+	grid-row: 2;
+	grid-column: 1 / span 2;
+	background: url("../img/mainpage-girl-sitting.jpg"), linear-gradient(#dbdcde, #dbdcde99);
+	background-repeat: no-repeat;
+	background-position: -2.6em 51%, center;
+	background-size: 143%, cover;
+	position: relative;
+}
+
+.feature .col-bottom-content {
+	padding: 0.5em;
+	font-size: 0.625em;
+	width: 34%;
+}
+
+.feature .col-bottom-content span {
+	font-weight: 300;
+}
+
+.feature .col-bottom-content button {
+	padding: 0.8em;
+	border: solid 2px #828283;
+	font-size: 1.013em;
+	font-weight: 700;
+	color: #828283;
+}
+
+.feature .col-bottom-content p {
+	font-family: 'Roboto', sans-serif;
+	margin: 0.7em 0;
+	color: #727272;
+	font-size: 0.713em;
+}
+
+/* ================ feature-2 ================== */
+
+.feature2-announcement {
+	width: 100%;
+	padding: 0.625em;
+	background: linear-gradient(#f3f3f3, #ddded8);
+	background-size: cover;
+}
+
+.feature2-announcement span {
+	font-weight: 300;
+}
+
+.feature2-announcement h3 {
+	font-size: 80%;
+	margin: 0.5em 0;
+}
+
+.feature2-announcement p {
+	font-size: 0.625em;
+	margin-bottom: 1.5em;
+}
+
+.feature2-announcement button {
+	padding: 0.8em;
+	border: solid 2px #828283;
+	font-size: 1.013em;
+	font-weight: 700;
+	color: #828283;
+}
+
+.feature-2-content {
+	width: 86%;
+	font-size: 0.625em;
+}
+
+.feature-2-bigwords p {
+	margin-bottom: 0;
+	color: #00c8c8;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section .main-p {
+	font-size: 3.625em;
+	line-height: 0;
+	margin: 0.9em 0 0.5em 0;
+}
+
+section .tag-p {
+	font-size: 1.25em;
+}
+
+/* ================ Pricing on top of Images ================== */
+
+.row {
+	position: relative;
+}
+
+.row-content {
+	padding: 0.8em;
+	position: absolute;
+	top: 0;
+	font-size: 0.7em;
+	color: #b4b4b4;
+}
+
+.row-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.row-content img {
+	width: 12%;
+	height: auto;
+	box-shadow: 0px 0px 7px 3px #0003;
+	border-radius: 50%;
+}
+
+.row-content img:hover {
+	background: #04cbd1;
+}
+
+.move-to-right {
+	justify-content: flex-end;
+}
+
+.row-content span:first-of-type {
+	vertical-align: super;
+	font-size: 0.7em;
+}
+
+/*
+--------------------------------------------------------
+********************   FOOTER   ******************
+--------------------------------------------------------
+*/
+
+footer {
+	background: #F8F8F8;
+}
+
+.footer-feature {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: flex-start;
+	width: 85%;
+	margin: auto;
+}
+
+.footer-feature h3 {
+	font-size: 2vw;
+	font-weight: 400;
+	color: #9a9a9a;
+	margin-bottom: 1em;
+}
+
+.footer-feature p {
+	font-size: 1.5vw;
+	color: #9a9a9a;
+	margin-bottom: 0.3em;
+}
+
+.feature-calltoAction {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 0.5em;
+	margin: 1.5em auto;
+	width: 65%;
+}
+
+.feature-calltoAction div {
+	font-size: 70%;
+}
+
+.feature-calltoAction img {
+	width: 50%;
+}
+
+.feature-calltoAction div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 8em;
+	text-align: center;
+}
+
+.feature-calltoAction div:first-of-type {
+	background-color: #333;
+	color: white;
+}
+
+.feature-calltoAction div:last-of-type {
+	background-color: #00B6B7;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+}
+
+.feature-calltoAction p:first-of-type {
+	font-weight: 700;
+}
+
+.footer-copyright {
+	width: 100%;
+	background: #333333;
+	text-align: center;
+	padding: 1em;
+	color: #999999;
+}
+
+/*
+--------------------------------------------------------
+********************   MEDIA QUERY   ******************
+--------------------------------------------------------
+*/
+
+@media (min-width: 600px) {
+	.site-header {
+		background: linear-gradient(#00000080, #00000080), url("../img/home-header-bkg.png");
+		background-repeat: no-repeat;
+		background-size: 100% 150%;
+		background-position: 0% 9%;
+	}
+	.site-header-off-content p {
+		letter-spacing: 0.5em;
+		margin-right: -0.3em;
+	}
+	main {
+		width: 90%;
+		margin: 3em auto;
+	}
+	.mobile-main-navigation {
+		display: none;
+	}
+	.main-navigation {
+		display: block;
+		padding: 2.5em 0;
+		border-top: beige 1px solid;
+	}
+	.main-navigation a {
+		font-size: 80%;
+	}
+	.main-navigation ul {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.main-navigation li {
+		margin-right: 1.2em;
+	}
+	.site-navigation p {
+		display: none;
+	}
+	.site-navigation ul {
+		display: flex;
+	}
+	.site-navigation li {
+		margin-right: 0.5em;
+	}
+	.site-navigation a {
+		color: #9F9D9D;
+	}
+	.feature .col-bottom {
+		grid-row: 1;
+		grid-column: 3 / span 2;
+	}
+	.feature,
+	.feature-2 {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	.feature-2-content {
+		width: 100%;
+		font-size: 1.125em;
+		position: relative;
+	}
+	.feature2-announcement {
+		grid-column: 1 / span 3;
+		background: url('../img/mainpage-blonde-girl.jpg'), linear-gradient(#f4f4f4, #e2e3de);
+		background-size: 164%, cover;
+		background-position: 0em 71%, center;
+		background-repeat: no-repeat;
+	}
+	.feature2-announcement h3 {
+		font-size: 125%;
+		margin-bottom: 0.5em;
+	}
+	.feature2-announcement p {
+		font-size: 0.525em;
+		margin-bottom: 0.6em;
+	}
+	.feature-2-content-desktop {
+		width: 40%;
+	}
+	.feature-2-bigwords {
+		position: absolute;
+		right: 5%;
+		top: 37%;
+	}
+	main .main-p {
+		margin: 0 0 0.5em 0;
+		font-size: 5em;
+	}
+	main .tag-p {
+		font-size: 1.6em;
+	}
+	.site-navigation a:hover {
+		color: #04cbd1;
+	}
+	.footer-feature p {
+		font-size: 0.625em;
+	}
+	.footer-feature h3 {
+		font-size: 0.75em;
+		font-weight: 700;
+	}
+}

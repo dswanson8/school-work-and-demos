@@ -38,6 +38,19 @@
 
     }
 
+    .main-project {
+
+        .section-projects {
+
+            .projects-container {
+
+                .card-deck {
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -112,6 +125,36 @@
             }
         }
 
+    }
+
+    .main-project {
+
+        .section-projects {
+
+            .html-container {
+
+                .card-deck {
+                    grid-template-columns: auto auto auto;
+                }
+            }
+            
+            .javascript-container {
+
+                .project-wrap {
+                    padding: 0;
+                    .block {
+                        .desktop-hidden {
+                            display: none;
+                        }
+                        img {
+                            height: 200px;
+                        }
+                        width: 40%;
+                        margin: 10px auto;                    
+                    }
+                }
+            }
+        }
     }
 }
 

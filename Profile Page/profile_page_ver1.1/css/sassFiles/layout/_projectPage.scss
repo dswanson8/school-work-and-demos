@@ -1,22 +1,63 @@
 .main-project {
 
     .section-projects {
-        .card {
-            .project-card-image {
-                height: 9em;
+
+        .html-container {
+            .card-deck {
+                display: grid;
+                grid-row-gap: 20px;
+                grid-template-columns: auto;
+            }
+            .card {
+                .project-card-image {
+                    height: 9em;
+                }
+                .btn-primary {
+                    background-color: #4c637c;
+                    box-shadow: 0 0 5px 2px #b1b1b1;
+                    border-color: none;
+                }
+                .btn-primary:hover {
+                    background-color: #c7c7c7;
+                    color: black;
+                }
+            }
+            .modal {
+                .modal-image-wrap {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-gap: 10px;
+                    justify-items: center;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
             }
         }
-        .modal {
-            .modal-image-wrap {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-gap: 10px;
-                justify-items: center;
-                img {
+
+        .javascript-container {
+
+            .project-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 10px;
+                .block {
                     width: 100%;
+                    margin: 10px 0;
+                    h4 {
+                        font-size: 1em;
+                        font-weight: bold;
+                        color: gray;
+                        letter-spacing: 2px;                    
+                    }
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
+
     }
 
 

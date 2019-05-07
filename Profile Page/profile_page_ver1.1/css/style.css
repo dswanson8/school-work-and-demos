@@ -231,16 +231,48 @@ main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link:ho
   background-color: #516e81 !important;
 }
 
-.main-project .section-projects .card .project-card-image {
+.main-project .section-projects .html-container .card-deck {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto;
+}
+.main-project .section-projects .html-container .card .project-card-image {
   height: 9em;
 }
-.main-project .section-projects .modal .modal-image-wrap {
+.main-project .section-projects .html-container .card .btn-primary {
+  background-color: #4c637c;
+  box-shadow: 0 0 5px 2px #b1b1b1;
+  border-color: none;
+}
+.main-project .section-projects .html-container .card .btn-primary:hover {
+  background-color: #c7c7c7;
+  color: black;
+}
+.main-project .section-projects .html-container .modal .modal-image-wrap {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
   justify-items: center;
 }
-.main-project .section-projects .modal .modal-image-wrap img {
+.main-project .section-projects .html-container .modal .modal-image-wrap img {
+  width: 100%;
+}
+.main-project .section-projects .javascript-container .project-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.main-project .section-projects .javascript-container .project-wrap .block {
+  width: 100%;
+  margin: 10px 0;
+}
+.main-project .section-projects .javascript-container .project-wrap .block h4 {
+  font-size: 1em;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 2px;
+}
+.main-project .section-projects .javascript-container .project-wrap .block img {
   width: 100%;
 }
 
@@ -336,6 +368,10 @@ main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link:ho
     margin-left: auto;
     margin-right: auto;
   }
+
+  .main-project .section-projects .projects-container .card-deck {
+    grid-template-columns: auto auto;
+  }
 }
 @media screen and (min-width: 700px) {
   main section {
@@ -390,6 +426,23 @@ main .section-portfolio .development-wrap .portfolio-piece-wrap .project-link:ho
   main .section-portfolio .development-wrap .single-piece {
     width: 300px;
     max-width: 400px;
+  }
+
+  .main-project .section-projects .html-container .card-deck {
+    grid-template-columns: auto auto auto;
+  }
+  .main-project .section-projects .javascript-container .project-wrap {
+    padding: 0;
+  }
+  .main-project .section-projects .javascript-container .project-wrap .block {
+    width: 40%;
+    margin: 10px auto;
+  }
+  .main-project .section-projects .javascript-container .project-wrap .block .desktop-hidden {
+    display: none;
+  }
+  .main-project .section-projects .javascript-container .project-wrap .block img {
+    height: 200px;
   }
 }
 @media screen and (min-width: 900px) {
